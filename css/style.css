@@ -18,7 +18,7 @@
 main{
     width: 100vw;
     min-height: 100vh;
-    background-color: lightgray;
+    background-color: black;
     position: relative;
 
     justify-content: center;
@@ -43,7 +43,6 @@ div.view{
 section.container{
     width: 90vw;
     max-width: calc((250px + 1rem) * 7 );
-    background-color: lightpink;
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-between;
@@ -68,4 +67,74 @@ div.name{
     left: 0;
     background-color: rgba(0, 0, 0, 0.3);
     border-top-right-radius: 0.5rem;
+}
+
+/*  FOOTER */
+footer{
+    height: 80px;
+    width: 100vw;
+    background-color: #222222;
+    color: white;
+    font-size: 0.8rem;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+footer ul{
+    list-style-type: none;
+}
+
+footer li{
+    height: 100%;
+    text-align: center;
+    line-height: 1.5rem;
+    margin-left: 0.8rem;
+}
+
+footer i{
+    font-size: 1.5rem;
+}
+
+footer div.settings{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    padding-left: 2rem;
+}
+
+footer div.options{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+footer div.end-call{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    background-color: gray;
+    height: 100%;
+    color: red;
+    font-size: 1.1rem;
+    padding: 2rem 2rem;
+}
+
+div.settings ul li:nth-child(even) i,
+div.options ul li:nth-child(5) i{
+    font-size: 1rem;
+}
+
+div.settings ul li:nth-child(even),
+div.options ul li:nth-child(5){
+    margin-left: 0.3rem;
+}
+
+div.options ul li:nth-child(4) i{
+    color: rgb(65, 204, 65);
 }
