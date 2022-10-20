@@ -3,3 +3,34 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.flex{
+    display: flex;
+}
+
+main{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: lightgray;
+
+    justify-content: center;
+    align-items: center;
+}
+
+section.container{
+    width: 90vw;
+    max-width: calc((250px + 1rem) * 7 );
+    background-color: lightpink;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    margin: 3rem 0;
+}
+
+/* profile */
+div.profile{
+    width: 250px;
+    height: 150px;
+    background-color: aqua;
+    margin: 0.5rem;
+}
